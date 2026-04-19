@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #22d3ee;
+  --color-primary-dark: #0891b2;
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #030014;
+  --color-surface-light: #f8fafc;
+  --color-surface-dark: #0f172a;
+  --color-text-light: #334155;
+  --color-text-dark: #f8fafc;
+  --font-sans: "Inter", "system-ui", sans-serif;
+  
+  --animate-shimmer: shimmer 1.5s infinite;
+  
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+}
+
+/* Custom dark mode variant since we use class based dark mode */
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg-light text-text-light transition-colors duration-300 antialiased font-sans;
+  }
+
+  .dark body {
+    @apply bg-bg-dark text-slate-300;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-white/20 dark:border-slate-800/50 shadow-sm;
+  }
+}
