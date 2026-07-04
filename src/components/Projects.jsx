@@ -5,6 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 import { fadeUp, staggerContainer } from '../utils/motion';
 import grocifymockup from '../assets/Images/Grocifymockup.png';
 import talentsyncmockup from '../assets/Images/image.png';
+import jobtrackerimg from '../assets/Images/jobtrackerimg.jpg';
 
 const projects = [
   {
@@ -16,12 +17,12 @@ const projects = [
     live: 'https://agent-69ca773a897fff45422cc0cc--grocifyproject.netlify.app/',
   },
   {
-    title: 'Awesome Website ',
-    description: 'A modern, website landing page design with interactive UI elements, showcasing a portfolio of projects and services with smooth animations and responsive layout.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-    tech: ['HTML', 'Tailwind CSS', 'JavaScript'],
+    title: 'Job Tracker Dashboard',
+    description: 'A sleek and intuitive dashboard for tracking job applications, featuring interactive charts, filters, and an application page to view status overview. Built with a responsive design for seamless user experience.',
+    image: jobtrackerimg,
+    tech: ['React', 'Tailwind CSS', 'JavaScript'],
     github: '#',
-    live: '#',
+    live: 'https://jobb-tracker.vercel.app/',
   },
   {
     title: 'TalentSync Website',
