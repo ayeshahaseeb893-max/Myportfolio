@@ -137,7 +137,7 @@ const Contact = () => {
                 <ContactInfoCard 
                   icon={FaLinkedin} 
                   title="LinkedIn" 
-                  content="Ayesha Ayesha" 
+                  content="Ayesha Haseeb" 
                   href={LINKEDIN_URL}
                 />
                 <ContactInfoCard 
