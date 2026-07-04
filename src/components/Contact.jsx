@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, Mail, MapPin, Sparkles, MessageSquare } from 'lucide-react';
 import { fadeUp, staggerContainer } from '../utils/motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { LINKEDIN_URL } from '../constants/socialLinks';
 
 const ContactInfoCard = ({ icon: Icon, title, content, delay, href }) => (
   <motion.a
@@ -137,7 +138,7 @@ const Contact = () => {
                   icon={FaLinkedin} 
                   title="LinkedIn" 
                   content="Ayesha Ayesha" 
-                  href="https://www.linkedin.com/in/ayesha-ayesha-706a29248/"
+                  href={LINKEDIN_URL}
                 />
                 <ContactInfoCard 
                   icon={FaGithub} 

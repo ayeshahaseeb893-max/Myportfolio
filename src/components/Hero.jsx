@@ -5,6 +5,7 @@ import { Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { fadeUp, staggerContainer } from '../utils/motion';
 import PlexusBackground from './PlexusBackground';
+import { LINKEDIN_URL } from '../constants/socialLinks';
 
 const Hero = () => {
   return (
@@ -103,7 +104,7 @@ const Hero = () => {
             >
               {[
                 { href: 'https://github.com/ayeshahaseeb893-max', icon: <FaGithub className="w-6 h-6" />, label: 'GitHub' },
-                { href: 'https://www.linkedin.com/in/ayesha-ayesha-706a29248/', icon: <FaLinkedin className="w-6 h-6" />, label: 'LinkedIn' },
+                { href: LINKEDIN_URL, icon: <FaLinkedin className="w-6 h-6" />, label: 'LinkedIn' },
                 { href: 'mailto:ayeshahaseeb8932@gmail.com', icon: <Mail className="w-6 h-6" />, label: 'Email' },
               ].map(({ href, icon, label }) => (
                 <a
