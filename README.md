@@ -82,7 +82,7 @@ This project is deployed on **Vercel**.
 
 ## 📬 Contact Me
 
-* LinkedIn: https://www.linkedin.com/in/ayesha-ayesha-706a29248/
+* LinkedIn: https://www.linkedin.com/in/ayesha-haseeb/
 * Email: ayeshahaseeb893@gmail.com
 
 ---
